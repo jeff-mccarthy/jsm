@@ -53,7 +53,19 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background: hsl(329 79% 53% / 1) url(./images/background.svg) top center no-repeat;
-  background-size: cover;
   z-index: -1;
+  background: url(./images/background.svg) no-repeat;
+  background-size: cover;
+  background-position-x: 0%;
+  animation: 24s infinite ease-in-out alternate waves;
+}
+
+@keyframes waves {
+  from {
+    background-position-x: 0%;
+  }
+
+  to {
+    background-position-x: 100%;
+  }
 }
